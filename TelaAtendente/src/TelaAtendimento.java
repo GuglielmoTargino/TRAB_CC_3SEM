@@ -47,6 +47,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
         btnCadastrar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
         btnSolicitar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Atendimento ao Cliente");
@@ -108,7 +109,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(lblDtNasc);
         lblDtNasc.setBounds(30, 270, 100, 30);
 
-        txtNome.setText("Guglielmo Henriques Targino Correa");
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomeActionPerformed(evt);
@@ -117,7 +117,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome);
         txtNome.setBounds(140, 310, 220, 30);
 
-        txtNome1.setText("Guglielmo Henriques Targino Correa");
         txtNome1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome1ActionPerformed(evt);
@@ -126,7 +125,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome1);
         txtNome1.setBounds(140, 30, 220, 30);
 
-        txtNome2.setText("Guglielmo Henriques Targino Correa");
         txtNome2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome2ActionPerformed(evt);
@@ -135,7 +133,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome2);
         txtNome2.setBounds(140, 70, 220, 30);
 
-        txtNome3.setText("Guglielmo Henriques Targino Correa");
         txtNome3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome3ActionPerformed(evt);
@@ -144,7 +141,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome3);
         txtNome3.setBounds(140, 110, 220, 30);
 
-        txtNome4.setText("Guglielmo Henriques Targino Correa");
         txtNome4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome4ActionPerformed(evt);
@@ -153,7 +149,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome4);
         txtNome4.setBounds(140, 150, 220, 30);
 
-        txtNome5.setText("Guglielmo Henriques Targino Correa");
         txtNome5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome5ActionPerformed(evt);
@@ -162,7 +157,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome5);
         txtNome5.setBounds(140, 190, 220, 30);
 
-        txtNome6.setText("Guglielmo Henriques Targino Correa");
         txtNome6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome6ActionPerformed(evt);
@@ -171,7 +165,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(txtNome6);
         txtNome6.setBounds(140, 230, 220, 30);
 
-        txtNome7.setText("Guglielmo Henriques Targino Correa");
         txtNome7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNome7ActionPerformed(evt);
@@ -216,7 +209,11 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(btnSolicitar);
         btnSolicitar.setBounds(470, 250, 150, 50);
 
-        setSize(new java.awt.Dimension(703, 626));
+        jLabel1.setText("icone");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(630, 10, 60, 300);
+
+        setSize(new java.awt.Dimension(724, 595));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -256,10 +253,9 @@ public class TelaAtendimento extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtMotivoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
+   
+     /*================================================================*/
+     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -290,12 +286,15 @@ public class TelaAtendimento extends javax.swing.JFrame {
             }
         });
     }
+    /**/
+    /*=================================================================*/
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAlterar;
     private javax.swing.JButton btnBuscarUsuario;
     private javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnSolicitar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCpf;
     private javax.swing.JLabel lblDtNasc;
     private javax.swing.JLabel lblEndereco;
