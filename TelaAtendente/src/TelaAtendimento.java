@@ -46,9 +46,9 @@ public class TelaAtendimento extends javax.swing.JFrame {
         btnBuscarUsuario = new javax.swing.JButton();
         btnCadastrar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
-        lblIconeatende = new javax.swing.JLabel();
         lblEndereco1 = new javax.swing.JLabel();
         txtNome8 = new javax.swing.JTextField();
+        lblIconeatende = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Atendimento ao Cliente");
@@ -175,6 +175,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
         txtNome7.setBounds(140, 270, 220, 30);
 
         lblMotivo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblMotivo.setForeground(new java.awt.Color(51, 255, 255));
         lblMotivo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMotivo.setText("Motivo Atendimento.");
         lblMotivo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -205,10 +206,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(btnAlterar);
         btnAlterar.setBounds(470, 180, 150, 50);
 
-        lblIconeatende.setText("icone");
-        getContentPane().add(lblIconeatende);
-        lblIconeatende.setBounds(630, 10, 60, 300);
-
         lblEndereco1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblEndereco1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEndereco1.setText("Endereço");
@@ -223,6 +220,11 @@ public class TelaAtendimento extends javax.swing.JFrame {
         });
         getContentPane().add(txtNome8);
         txtNome8.setBounds(140, 310, 220, 30);
+
+        lblIconeatende.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/clinica-preco2.jpg"))); // NOI18N
+        lblIconeatende.setText("icone");
+        getContentPane().add(lblIconeatende);
+        lblIconeatende.setBounds(10, 0, 700, 590);
 
         setSize(new java.awt.Dimension(748, 595));
         setLocationRelativeTo(null);
