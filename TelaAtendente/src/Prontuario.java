@@ -39,6 +39,9 @@ public class Prontuario extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela Prontuário");
@@ -51,7 +54,7 @@ public class Prontuario extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(60, 170, 150, 30);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(230, 170, 200, 30);
+        jTextField1.setBounds(230, 170, 160, 30);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -81,13 +84,13 @@ public class Prontuario extends javax.swing.JFrame {
         getContentPane().add(jLabel5);
         jLabel5.setBounds(60, 130, 150, 30);
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(230, 10, 200, 30);
+        jTextField2.setBounds(230, 10, 160, 30);
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(230, 50, 200, 30);
+        jTextField3.setBounds(230, 50, 160, 30);
         getContentPane().add(jTextField4);
-        jTextField4.setBounds(230, 90, 200, 30);
+        jTextField4.setBounds(230, 90, 160, 30);
         getContentPane().add(jTextField5);
-        jTextField5.setBounds(230, 130, 200, 30);
+        jTextField5.setBounds(230, 130, 160, 30);
         getContentPane().add(jTextField6);
         jTextField6.setBounds(30, 280, 670, 250);
 
@@ -99,17 +102,28 @@ public class Prontuario extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Código Mádico");
+        jLabel6.setText("Código Médico");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(550, 10, 140, 50);
+        jLabel6.setBounds(450, 10, 130, 40);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Dt. Atendimento.");
+        jLabel7.setText("Alterar Prontuário");
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(550, 80, 140, 50);
+        jLabel7.setBounds(540, 130, 140, 40);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Dt. Alteração");
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(450, 70, 130, 40);
+        getContentPane().add(jTextField9);
+        jTextField9.setBounds(590, 10, 90, 40);
+        getContentPane().add(jTextField10);
+        jTextField10.setBounds(590, 70, 90, 40);
 
         setSize(new java.awt.Dimension(743, 588));
         setLocationRelativeTo(null);
@@ -158,12 +172,15 @@ public class Prontuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

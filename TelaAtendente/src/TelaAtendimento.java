@@ -25,7 +25,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblEndereco = new javax.swing.JLabel();
+        lblCodigoProntuario = new javax.swing.JLabel();
         lblNome = new javax.swing.JLabel();
         lblNCartaoSus = new javax.swing.JLabel();
         lblCpf = new javax.swing.JLabel();
@@ -33,7 +33,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
         lblSexo = new javax.swing.JLabel();
         lblRaca = new javax.swing.JLabel();
         lblDtNasc = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
+        txtCodigoProntuario = new javax.swing.JTextField();
         txtNome1 = new javax.swing.JTextField();
         txtNome2 = new javax.swing.JTextField();
         txtNome3 = new javax.swing.JTextField();
@@ -46,19 +46,20 @@ public class TelaAtendimento extends javax.swing.JFrame {
         btnBuscarUsuario = new javax.swing.JButton();
         btnCadastrar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
-        btnSolicitar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblIconeatende = new javax.swing.JLabel();
+        lblEndereco1 = new javax.swing.JLabel();
+        txtNome8 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Atendimento ao Cliente");
         getContentPane().setLayout(null);
 
-        lblEndereco.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEndereco.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEndereco.setText("Endereço");
-        lblEndereco.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(lblEndereco);
-        lblEndereco.setBounds(30, 310, 100, 30);
+        lblCodigoProntuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblCodigoProntuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCodigoProntuario.setText("Cod.Prontuário");
+        lblCodigoProntuario.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(lblCodigoProntuario);
+        lblCodigoProntuario.setBounds(30, 350, 120, 30);
 
         lblNome.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblNome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -109,13 +110,13 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(lblDtNasc);
         lblDtNasc.setBounds(30, 270, 100, 30);
 
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
+        txtCodigoProntuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
+                txtCodigoProntuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtNome);
-        txtNome.setBounds(140, 310, 220, 30);
+        getContentPane().add(txtCodigoProntuario);
+        txtCodigoProntuario.setBounds(160, 350, 200, 30);
 
         txtNome1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +179,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
         lblMotivo.setText("Motivo Atendimento.");
         lblMotivo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(lblMotivo);
-        lblMotivo.setBounds(30, 360, 640, 30);
+        lblMotivo.setBounds(30, 400, 640, 30);
 
         txtMotivo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         txtMotivo.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +188,7 @@ public class TelaAtendimento extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtMotivo);
-        txtMotivo.setBounds(30, 395, 640, 140);
+        txtMotivo.setBounds(30, 435, 640, 100);
 
         btnBuscarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnBuscarUsuario.setText("Buscar Usuário");
@@ -204,22 +205,32 @@ public class TelaAtendimento extends javax.swing.JFrame {
         getContentPane().add(btnAlterar);
         btnAlterar.setBounds(470, 180, 150, 50);
 
-        btnSolicitar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnSolicitar.setText("Solicitar Pront.");
-        getContentPane().add(btnSolicitar);
-        btnSolicitar.setBounds(470, 250, 150, 50);
+        lblIconeatende.setText("icone");
+        getContentPane().add(lblIconeatende);
+        lblIconeatende.setBounds(630, 10, 60, 300);
 
-        jLabel1.setText("icone");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(630, 10, 60, 300);
+        lblEndereco1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEndereco1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEndereco1.setText("Endereço");
+        lblEndereco1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(lblEndereco1);
+        lblEndereco1.setBounds(30, 310, 100, 30);
 
-        setSize(new java.awt.Dimension(724, 595));
+        txtNome8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNome8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNome8);
+        txtNome8.setBounds(140, 310, 220, 30);
+
+        setSize(new java.awt.Dimension(748, 595));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+    private void txtCodigoProntuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoProntuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
+    }//GEN-LAST:event_txtCodigoProntuarioActionPerformed
 
     private void txtNome1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNome1ActionPerformed
         // TODO add your handling code here:
@@ -252,6 +263,10 @@ public class TelaAtendimento extends javax.swing.JFrame {
     private void txtMotivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMotivoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtMotivoActionPerformed
+
+    private void txtNome8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNome8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNome8ActionPerformed
 
    
      /*================================================================*/
@@ -293,19 +308,19 @@ public class TelaAtendimento extends javax.swing.JFrame {
     private javax.swing.JButton btnAlterar;
     private javax.swing.JButton btnBuscarUsuario;
     private javax.swing.JButton btnCadastrar;
-    private javax.swing.JButton btnSolicitar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblCodigoProntuario;
     private javax.swing.JLabel lblCpf;
     private javax.swing.JLabel lblDtNasc;
-    private javax.swing.JLabel lblEndereco;
+    private javax.swing.JLabel lblEndereco1;
+    private javax.swing.JLabel lblIconeatende;
     private javax.swing.JLabel lblMotivo;
     private javax.swing.JLabel lblNCartaoSus;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblRaca;
     private javax.swing.JLabel lblRg;
     private javax.swing.JLabel lblSexo;
+    private javax.swing.JTextField txtCodigoProntuario;
     private javax.swing.JTextField txtMotivo;
-    private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtNome1;
     private javax.swing.JTextField txtNome2;
     private javax.swing.JTextField txtNome3;
@@ -313,5 +328,6 @@ public class TelaAtendimento extends javax.swing.JFrame {
     private javax.swing.JTextField txtNome5;
     private javax.swing.JTextField txtNome6;
     private javax.swing.JTextField txtNome7;
+    private javax.swing.JTextField txtNome8;
     // End of variables declaration//GEN-END:variables
 }

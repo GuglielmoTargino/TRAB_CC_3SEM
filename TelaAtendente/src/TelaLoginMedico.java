@@ -25,21 +25,57 @@ public class TelaLoginMedico extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblNomeMedico = new javax.swing.JLabel();
+        lblSenhaMedico = new javax.swing.JLabel();
+        txtNomeMedico = new javax.swing.JTextField();
+        txtSenhaMedico = new javax.swing.JTextField();
+        btnEntrar = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login Médico");
+        getContentPane().setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        lblNomeMedico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblNomeMedico.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNomeMedico.setText("Codigo Médico");
+        lblNomeMedico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(lblNomeMedico);
+        lblNomeMedico.setBounds(60, 80, 120, 40);
 
-        pack();
+        lblSenhaMedico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblSenhaMedico.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSenhaMedico.setText("Senha");
+        lblSenhaMedico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(lblSenhaMedico);
+        lblSenhaMedico.setBounds(60, 140, 120, 40);
+        getContentPane().add(txtNomeMedico);
+        txtNomeMedico.setBounds(210, 80, 200, 40);
+        getContentPane().add(txtSenhaMedico);
+        txtSenhaMedico.setBounds(210, 140, 200, 40);
+
+        btnEntrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnEntrar.setText("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnEntrar);
+        btnEntrar.setBounds(170, 230, 110, 50);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/subtela_medico.jpg"))); // NOI18N
+        jLabel4.setText("icone");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 6, 500, 370);
+
+        setSize(new java.awt.Dimension(516, 383));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +113,11 @@ public class TelaLoginMedico extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEntrar;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lblNomeMedico;
+    private javax.swing.JLabel lblSenhaMedico;
+    private javax.swing.JTextField txtNomeMedico;
+    private javax.swing.JTextField txtSenhaMedico;
     // End of variables declaration//GEN-END:variables
 }
