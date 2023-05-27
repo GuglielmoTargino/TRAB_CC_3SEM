@@ -75,8 +75,8 @@ public class TelaLoginMedico extends javax.swing.JFrame {
         try{
             
             Class.forName("com.mysql.cj.jdbc.Driver"); //carrega o driver conector J para criar conexao com o bd.
-            Connection conexao_=DriverManager.getConnection("jdbc:mysql://localhost:3306/cadastro", "root", "");
-            PreparedStatement st_=conexao_.prepareStatement("select* from usuario where usuario=? and senha=?");
+            Connection conexao_=DriverManager.getConnection("jdbc:mysql://localhost:3306/proj3sem", "root", "");
+            PreparedStatement st_=conexao_.prepareStatement("select* from user where nome=? and senha=?");
             
             
             st_.setString(1,txtNomeMedico.getText());
