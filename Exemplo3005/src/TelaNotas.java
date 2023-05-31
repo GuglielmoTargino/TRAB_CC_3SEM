@@ -99,8 +99,8 @@ public class TelaNotas extends javax.swing.JFrame {
        nFaltas = Integer.parseInt(txtFalta.getText());
        nAulas = Integer.parseInt(txtAula.getText());
        
-       status=NotasService.verificarAprovacao(nota, nAulas, nFaltas);
-       JOptionPane.showMessageDialog(null, status,+txtAluno.getText()+'vc foi'+status+'em'+txtDisciplina.getText()); 
+       status=NotasService.verificarAprovacao(nota);//, nAulas, nFaltas
+       JOptionPane.showMessageDialog(null, status + "GHT com nota "+nota); 
        
         
     }//GEN-LAST:event_btnResultadoActionPerformed

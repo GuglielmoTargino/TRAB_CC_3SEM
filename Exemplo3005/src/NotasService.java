@@ -12,4 +12,14 @@ public class NotasService {
         }
 
     }
+     public static String verificarAprovacao(double nota) {
+
+            
+        if (nota < 6) {
+            return "Reprovado";
+        } else {
+            return "Aprovado";
+        }
+
+     }
 }
